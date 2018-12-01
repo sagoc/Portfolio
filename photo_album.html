@@ -9,20 +9,23 @@
       Student Name: Scott Grover
       Date:   12/01/2018
 
-      Filename: home.html
-      Supporting files: flexlayout.css, multimedia.css, pagelayout.css, 
-	                    gltc_logo.png, DrOfDivinity.jpg
+      Filename: photo_albumn.html
+      Supporting files: flexlayout.css, gridlayout.css, multimedia.css, pagelayout.css,
+	                    crossAndPsalm23.png, divineMercyAndMotherMary.png, frontOfChapelClose.png,
+						frontOfChapelFar.png, gtlc_logo.png, organAndPsalm23.png, sisterRoseInChapel.png,
+						statueStFrancisOfAssisi.png, tapestryPsalm23.png
 
    -->
       <meta charset="utf-8" />
 	  <meta name="viewpoint" content="width=device-width, initial-scale=1" />
-	  <meta name="description" content="Glorify the Lord Chapel home page" />
+	  <meta name="description" content="Glorify the Lord Chapel photo albumn" />
 	  <meta name="keywords" content="Tacoma, chapel, Glorify the Lord, Sister Rose" />
 	  <meta name="author" content="Scott Grover" />
 	  
-	  <title>Home | Glorify the Lord Chapel</title>
-    
+	  <title>Photo Albumn | Glorify the Lord Chapel</title>
+	  
 	  <link href="css/pagelayout.css" rel="stylesheet" type="text/css" media="screen"/>
+	  <link href="css/gridlayout.css" rel="stylesheet" type="text/css" media="screen" />
 	  <link href="css/multimedia.css" rel="stylesheet" type="text/css" media="screen" />
 	  <link href="css/flexlayout.css" rel="stylesheet" type="text/css" media="screen" />
 	  
@@ -75,53 +78,57 @@
 	   </nav>
 
 	  <main>  <!-- Main page content-->
-	  
-         <article id="beginnings" >
+	     <section>
 		 
-            <header>
-               <h1>Peace Be With You!</h1>
+		    <header>
+		       <h1>Photographs Inside Glorify The Lord Chapel</h1>
 			</header>
-		 
-		    <blockquote class="bible">   <!-- Blockquote with this id is used for Bible quotes. -->
-		       <p>
-		          But the fruit of the spirit is love, joy, peace, longsuffering, kindness, 
-			      goodness and faithfulness, gentleness, self-control. Against such there is no law. 
-			   </p>   
-			   <cite>&mdash;Galatians 5:22-23</cite>
-		    </blockquote>
-		 
-            <p class="first">   <!-- Made Glorify the Lord Chapel bold because it is the name of the site.-->
-               <strong>Glorify the Lord Chapel</strong> is the expression of my love to God. A couple of 
-			   years ago, I started collecting items for a religous 
-			   <a href="https://en.wikipedia.org/wiki/Grotto" target="_blank">grotto</a> 
-			   for devotional purposes. As I continued to collect items, I felt the desire 
-			   to convert my house into a 
-			   <a href="https://en.wikipedia.org/wiki/Chapel" target="_blank">chapel</a>.
-            </p>
-            <p>
-               I am heavily influenced by the Catholic Faith.  I attend mass every Sunday. 
-			   As you know, Catholics do not allow women to be priests.  I felt the 
-			   restraints of the Catholic Faith holding me back from what is in my heart.
-			   I wanted to be a priest.  
-		    </p>
-		 
-		    <a href="https://www.themonastery.org/" target="_blank">
-	        <img src="imgs/DrOfDivinity.jpg" alt="Doctor of Divinity Certificate" class="photosRight link small"/>
-		    </a> <!-- Link attached to Certificate will go to the Universl Life Church website if selected. -->
-		 
-		    <p>   <!-- Made Universal Life Church, and Covenant Bible Seminary bold because they are names of organizations.-->
-			   I received a Doctor of Divinity from the <strong>Universal Life Church</strong> on 
-			   March 30, 2017.  This allows me to officiate weddings in Washington State.  
-			   This was not enough for me, so I am now attending the 
-			   <strong><a href="https://www.covenantbibleseminary.org/" target="_blank">Covenant Bible Seminary</a></strong> 
-			   and working on my Associate of Theology Degree.
-            </p>
-            <p>   <!-- Made Glorify the Lord Chapel bold because it is the name of the site.-->
-               <strong>Glorify the Lord Chapel</strong> is currently providing pre-marriage spiritual counseling and
-			   wedding ceremonies.
-            </p>
-		 
-         </article>
+			
+			<div class="row">
+			   <div class="col-1-2">
+			      <img src="imgs/frontOfChapelFar.png" alt="View of Chapel at Entrance" class="large" id="chapel1" />
+               </div>
+			   <div class="col-1-2">
+			      <img src="imgs/frontOfChapelClose.png" alt="View of Chapel at Entrance" class="large" id="chapel2" />
+			   </div>
+			</div>
+			<div class="row">
+			   <div class="col-1-3">
+			      <p></p> <!-- To place the picture in the center of the row -->
+			   </div>
+			   <div class="col-1-3">
+			      <img src="imgs/sisterRoseInChapel.png" alt="Sister Rose reading from The Bible in the Chapel" class="large" id="chapel3" />
+			   </div>
+			   <div class="col-1-3">
+			      <p></p> <!-- To place the picture in the center of the row -->
+			   </div>
+			</div>
+			<div class="row">
+			   <div class="col-1-2">
+			      <img src="imgs/divineMercyAndMotherMary.png" alt="Pictures of The Devine Mercy and Mother Mary with Jesus" class="large" id="chapel4" />
+			   </div>
+			   <div class="col-1-2">
+			      <img src="imgs/crossAndPsalm23.png" alt="Cross with Psalm 23 below" class="med" id="chapel5" />
+			   </div>
+			</div>
+			<div class="row">
+			   <div class="col-1-3">
+			      <img src="imgs/tapestryPsalm23.png" alt="Psalm 23 tapestry" class="large" id="chapel6" />
+			   </div>
+			   <div class="col-1-3">
+			      <img src="imgs/organAndPsalm23.png" alt="Organ with Psalm 23 tapestry" class="large" id="chapel7" />
+			   </div>
+			   <div class="col-1-3">
+			      <img src="imgs/statueStFrancisOfAssisi.png" alt="St. Francis of Assisi statue on top of organ" class="large" id="chapel8" />
+			   </div>
+			</div>
+			<div class="row">
+			  <div class="col-1-1">
+			     <p></p> <!-- To give me an empty row -->
+			  </div>
+			</div>
+			
+		 </section>
 	  </main>
 
 	  <footer>

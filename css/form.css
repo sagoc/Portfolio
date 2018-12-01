@@ -1,13 +1,14 @@
 /*
    
   OC CIS 155 Web Development I
-  Build on Concepts Project #3
+  Build on Concepts Final Project
   
   Student Name: Scott Grover
-  Date:   11/12/2018
+  Date:   11/23/2018
 
   Filename: form.css
-  Supporting files: pagelayout.css, flexlayout.css
+  
+  Supporting files: flexlayout.css, pagelayout.css
 
 */
 
@@ -26,6 +27,22 @@ form.prayerRequest > fieldset {
 }
 form.prayerRequest legend{
 	display: block;
+}
+
+form.prayerRequest {
+	float: left;
+	height: 400px;
+	width: 33%;
+}
+
+div.buttonReset, div.buttonSubmit {
+	display: block;
+	float: left;
+	width: 5%;
+}
+
+div.buttons {
+	float: left;
 }
 
 input[type='submit'], input[type='reset'] {

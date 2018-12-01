@@ -7,10 +7,11 @@
       Build on Concepts Final Project
       
       Student Name: Scott Grover
-      Date:   12/1/2018
+      Date:   12/01/2018
 
       Filename: the_bible.html
-      Supporting files: pagelayout.css, flexlayout.css, gtlc_logo.png, My_Bibles.png
+      Supporting files: flexlayout.css, multimedia.css, pagelayout.css, 
+	                    gtlc_logo.png, My_Bibles.png
 
    -->
       <meta charset="utf-8" />
@@ -18,9 +19,11 @@
 	  <meta name="description" content="Glorify the Lord Chapel - The Bible" />
 	  <meta name="keywords" content="Tacoma, chapel, Glorify the Lord, Sister Rose, Bible, Bible Study" />
 	  <meta name="author" content="Scott Grover" />
-	  <title>Glorify the Lord Chapel: The Bible</title>
+	  
+	  <title>The Bible | Glorify the Lord Chapel</title>
 	  
       <link href="css/pagelayout.css" rel="stylesheet" type="text/css" />
+	  <link href="css/multimedia.css" rel="stylesheet" type="text/css" media="screen" />
 	  <link href="css/flexlayout.css" rel="stylesheet" type="text/css" />
 	  
    </head>
@@ -65,6 +68,8 @@
 			      <li><a href="#">The Ceremony</a></li>
 			   </ul>
 		    </li> --> <!-- Future -->
+			<li><a href="uplifting_music.html">My Favorite Music</a></li>
+			<li><a href="photo_album.html">Photographs</a></li>
 		    <li><a href="about.html">About me</a></li>
 	     </ul>
 	  </nav>	 
@@ -72,100 +77,106 @@
 	  <main id="compare_bible">  <!-- Main page content-->
 	        
 		 <article>
-		   <h1>The Bible</h1> <!-- Information from the links in the paragraph below -->
-		   <p>
-			  The Bibles on my shelf are a combination of the ones owned by my husband, who was raised in the Lutheran faith and myself.   
-			  This is not my attempt to influence your decision on which is the better translation to use. 
-		   </p>
-		   <p>				  
-			  Picking the correct Bible to use can be a daunting task due to all the different translations out there.  
-			  <a href="http://usccb.org/bible/approved-translations/index.cfm" target="_blank">The United States Conference of Catholic Bishops</a> 
-			  have a web page to inform us Catholics which translations have been approved for use by the USCCB since 1983. If you are 
-			  not Catholic, the translation you chose should be inline with what your place of worship uses.  
-		   </p>
-		   <p>
-			  There are word-for-word, thought-for-thought, and paraphrase translations to choose from along with the grade level that 
-			  they are written at.  An interesting fact is that most of the 
-			  <a href="https://notjustanotherbook.com/biblecomparison.htm" target="_blank">English Bible translations</a> are written at the eighth-grade level or below.
-		   </p>
+		 
+		    <header>  
+		       <h1>The Bible</h1> 
+			</header>
+			
+		    <p>     <!-- Information from the links in the paragraph below -->
+			   The Bibles on my shelf are a combination of the ones owned by my husband, who was raised in the Lutheran faith and myself.   
+			   This is not my attempt to influence your decision on which is the better translation to use. 
+		    </p>
+		    <p>				  
+			   Picking the correct Bible to use can be a daunting task due to all the different translations out there.  
+			   <a href="http://usccb.org/bible/approved-translations/index.cfm" target="_blank">The United States Conference of Catholic Bishops</a> 
+			   have a web page to inform us Catholics which translations have been approved for use by the USCCB since 1983. If you are 
+			   not Catholic, the translation you chose should be inline with what your place of worship uses.  
+		    </p>
+		    <p>
+			   There are word-for-word, thought-for-thought, and paraphrase translations to choose from along with the grade level that 
+			   they are written at.  An interesting fact is that most of the 
+			   <a href="https://notjustanotherbook.com/biblecomparison.htm" target="_blank">English Bible translations</a> are written at the eighth-grade level or below.
+		    </p>
 		 </article>
 		 <figure>  <!-- I took the photograph of my bibles -->
-		  <img src="imgs/My_Bibles.png" alt="The Bibles on my shelf" class="photosRight large" usemap="#bookshelf"/>
-		  <figcaption>Select the Bibles on the bookshelf to learn some more.</figcaption>
+		    <img src="imgs/My_Bibles.png" alt="The Bibles on my shelf" class="photosRight large" usemap="#bookshelf"/>
+		    <figcaption>Select the Bibles on the bookshelf to learn some more.</figcaption>
 		 </figure>
-		 <map name="bookshelf">  
-		   <area shape="rect" coords="100,100,300,300" href="#catholic" alt="Catholic Bible" />
-		   <!--  My software was not accurate enough to allow multiple hotspots.  This is for future.
-		   <area shape="rect" coords=" " href="#douray_rheims" alt="Douray-Rheims Bible" />
-		   <area shape="rect" coords=" " href="#biblia" alt="Catholic Bible in Tagolog" />
-		   <area shape="rect" coords=" " href="new_english" alt="New English Bible" />
-		   <area shape="rect" coords=" " href="#rsv" alt="Revised Standard Version" />
-		   <area shape="rect" coords=" " href="#niv" alt="New International Version" />
-		   <area shape="rect" coords=" " href="#kjv" alt="King James Version" />
-		   <area shape="rect" coords=" " href="#nkjv" alt="New King James Version" />
-		   -->
-		 </map>
-
-		    <article class="description" id="catholic"><!-- Information obtained by the bibles themselves  -->
-			   <h2>The Catholic Bible</h2>
+		    <map name="bookshelf">  
+		       <area shape="rect" coords="100,100,300,300" href="#catholic" alt="Catholic Bible" />
+		       <!--  My software was not accurate enough to allow multiple hotspots.  This is for future.
+		       <area shape="rect" coords="64,70,88,174" href="#douray_rheims" alt="Douray-Rheims Bible" />
+		       <area shape="rect" coords="90,63,111,175" href="#biblia" alt="Catholic Bible in Tagolog" />
+		       <area shape="rect" coords="109,47,167,177" href="new_english" alt="New English Bible" />
+		       <area shape="rect" coords="168,55,192,177" href="#rsv" alt="Revised Standard Version" />
+		       <area shape="rect" coords="196,34,218,179" href="#niv" alt="New International Version" />
+		       <area shape="rect" coords="122,19,289,187" href="#kjv" alt="King James Version" />
+		       <area shape="rect" coords="291,60,313,184" href="#nkjv" alt="New King James Version" />
+		       -->
+		    </map>
+		  
+         
+		 <article class="description" id="catholic"><!-- Information obtained by the bibles themselves  -->
+			<h2>The Catholic Bible</h2>
+			<p>
+			   The Catholic Bible has seven additional books in the Old Testament when it is compared to a Protestant Bibles. 
+			   The additional books in the Catholic Bible are known as Deutero-Canonicals and are mistakengly called the Apocrypha 
+			   by the Protestants.  They are Tobit, Judith, 1 Maccabees, 2 Maccabees, Wisdom, Sirach (Ecclesiasticus), and Baruch.
+			   The Catholic Bible also incudes additions to the books of Esther and Daniel.
+			</p>
+			<p>
+			   The first Bible on the left is a New American Bible (NAB) and it is in the middle of the spectrum between the two
+			   translation approaches.  Sometimes it is more literal and at other times it is more conversational. It is written
+			   at the seventh grade level.
+			</p>
+			<p>
+			   I will be showing the differences between the different translations by showing the same passage for each bible.
+			</p>
+			<blockquote class="bible">
 			   <p>
-			      The Catholic Bible has seven additional books in the Old Testament when it is compared to a Protestant Bibles. 
-			      The additional books in the Catholic Bible are known as Deutero-Canonicals and are mistakengly called the Apocrypha 
-			      by the Protestants.  They are Tobit, Judith, 1 Maccabees, 2 Maccabees, Wisdom, Sirach (Ecclesiasticus), and Baruch.
-			      The Catholic Bible also incudes additions to the books of Esther and Daniel.
+				  16 Consequently, from now on we regard no one according to the flesh; even if we once knew Christ according 
+				  to the flesh, yet now we know him so no longer.  17 So whoever is in Christ is a new creation: the old things 
+				  have passed away: behold, new things have come. 18 And all this is from God, who has reconciled us to himself 
+				  through Christ and given us the ministry of reconciliation,
 			   </p>
+			   <cite>&mdash; 2 Corinthians 5:16-18 (St. Joseph Edition)</cite>
+			</blockquote>	
+		 </article>
+		 
+		 <article class="description" id="douay_rheims">
+			<h2>The Douay-Rheims Bible</h2>
+			<p>
+			   The Douay-Rheims is a translation of the Latin Vulgate (Biblia Sacra Vulgata) Clementine Version which was 
+			   translated from Greek and other languages into Latin by Saint Jerome, about 382 A.D.  The Latin Vulgate Bible
+			   was declared by the Catholic Church to be the only authentic and official version, in 1546.  Bishop Richard 
+			   Challoner in 1749-1752 AD took the Latin Vulgate and translated it into English.  It is written at the 13th 
+			   grade level.
+			</p>
+			<blockquote class="bible">
 			   <p>
-			      The first Bible on the left is a New American Bible (NAB) and it is in the middle of the spectrum between the two
-			      translation approaches.  Sometimes it is more literal and at other times it is more conversational. It is written
-			      at the seventh grade level.
+				  16 So that henceforth we know no one according to the flesh.  And even though we have known Christ according
+				  to the flesh, yet now we know him so no longer.<br>
+				  17 If then any man is in Christ, he is a new creature: the former things have passed away; behold, they are 
+				  made new!<br>
+				  18 But all things are from God, who has reconciled us to himself through Christ, and has given to us the 
+				  ministry of reconciliation.
 			   </p>
-			   <p>
-			      I will be showing the differences between the different translations by showing the same passage for each bible.
-			   </p>
-			   <blockquote class="bible">
-			      <p>
-				     16 Consequently, from now on we regard no one according to the flesh; even if we once knew Christ according 
-				     to the flesh, yet now we know him so no longer.  17 So whoever is in Christ is a new creation: the old things 
-				     have passed away: behold, new things have come. 18 And all this is from God, who has reconciled us to himself 
-				     through Christ and given us the ministry of reconciliation,
-			      </p>
-			      <cite>&mdash; 2 Corinthians 5:16-18 (St. Joseph Edition)</cite>
-			   </blockquote>	
-		    </article>
-		    <article class="description" id="douay_rheims">
-			   <h2>The Douay-Rheims Bible</h2>
-			   <p>
-				  The Douay-Rheims is a translation of the Latin Vulgate (Biblia Sacra Vulgata) Clementine Version which was 
-				  translated from Greek and other languages into Latin by Saint Jerome, about 382 A.D.  The Latin Vulgate Bible
-				  was declared by the Catholic Church to be the only authentic and official version, in 1546.  Bishop Richard 
-				  Challoner in 1749-1752 AD took the Latin Vulgate and translated it into English.  It is written at the 13th 
-				  grade level.
-			   </p>
-			   <blockquote class="bible">
-			      <p>
-				     16 So that henceforth we know no one according to the flesh.  And even though we have known Christ according
-				     to the flesh, yet now we know him so no longer.<br>
-				     17 If then any man is in Christ, he is a new creature: the former things have passed away; behold, they are 
-				     made new!<br>
-				     18 But all things are from God, who has reconciled us to himself through Christ, and has given to us the 
-				     ministry of reconciliation.
-			      </p>
-			      <cite>&mdash; 2 Corinthians 5:16-18</cite>
-			   </blockquote>
-		    </article>
+			   <cite>&mdash; 2 Corinthians 5:16-18</cite>
+			</blockquote>
+		 </article>
 		  
 		 <article class="description" id="biblia">
 			<h2>The Bible in Tagolog</h2>
 		    <blockquote class="bible" lang="tl">
-			<p>
-			   16 Kaya ngayon, ang pagtingin namin sa bawat tao ay hindi na batay sa sukatan ng tao.  Noong una’y ganoon 
-			   ang aming pagkakilala kay Cristo, ngunit ngayo’y hini na.  17 Kaya’t kung nakipag-isa na kay Cristo ang 
-			   isang tao, isa na siyang bagong nilalang.  Wala na ang dati niyang pagkatao, sa halip, ito’y napalitan na 
-			   ng bago. 18 Ang Diyos ang gumawa ng lahat ng ito.  Sa pamamagitan ni Cristo, ibinilang niya kaming mga 
-			   kaibigan at hindi na kaaway, at pinagkatiwalaan niya kami upang maglingkod nang sa gayon ang mga tao ay 
-			   maging kaibigan rin niya.
-			</p>
-			<cite>&mdash; 2 Corinthians 5:16-18</cite>
+			   <p>
+			      16 Kaya ngayon, ang pagtingin namin sa bawat tao ay hindi na batay sa sukatan ng tao.  Noong una’y ganoon 
+			      ang aming pagkakilala kay Cristo, ngunit ngayo’y hini na.  17 Kaya’t kung nakipag-isa na kay Cristo ang 
+			      isang tao, isa na siyang bagong nilalang.  Wala na ang dati niyang pagkatao, sa halip, ito’y napalitan na 
+			      ng bago. 18 Ang Diyos ang gumawa ng lahat ng ito.  Sa pamamagitan ni Cristo, ibinilang niya kaming mga 
+			      kaibigan at hindi na kaaway, at pinagkatiwalaan niya kami upang maglingkod nang sa gayon ang mga tao ay 
+			      maging kaibigan rin niya.
+			   </p>
+			   <cite>&mdash; 2 Corinthians 5:16-18</cite>
 		    </blockquote>
 		 </article>
 		  
@@ -180,9 +191,10 @@
 			      to last this has been the work of God.  He has reconciled us men to himself through Christ, and he has 
 			      enlisted us in this service of reconciliation.
 			   </p>
-			<cite>&mdash; 2 Corinthians 5:16-18</cite>
+			   <cite>&mdash; 2 Corinthians 5:16-18</cite>
 		    </blockquote>
 		 </article>
+		 
 		 <article class="description" id="rsv">
 			<h2>New Revised Standard Version</h2>
 
@@ -196,6 +208,7 @@
 			   <cite>&mdash; 2 Corinthians 5:16-18</cite>
 		    </blockquote>
 		 </article>
+		 
 		 <article class="description" id="niv">
 		    <h2>New International Version</h2>
 
@@ -209,6 +222,7 @@
 		       <cite>&mdash; 2 Corinthians 5:16-18</cite>
 		    </blockquote>
 		 </article>
+		 
 		 <article class="description" id="kjv">
 		    <h2>King James Version</h2>
 		    <p>
@@ -227,6 +241,7 @@
 		       <cite>&mdash; 2 Corinthians 5:16-18</cite>
 		    </blockquote>
          </article>
+		 
 		 <article class="description" id="nkjv">
 			<h2>New King James Version</h2>
 
@@ -242,6 +257,7 @@
 			   <cite>&mdash; 2 Corinthians 5:16-18</cite>
 		    </blockquote>
 		 </article>
+		 
       </main>	
 	  	  
 	  <footer>

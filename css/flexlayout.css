@@ -1,14 +1,14 @@
 /*
    
   OC CIS 155 Web Development I
-  Build on Concepts Project #3
+  Build on Concepts Final Project
   
   Student Name: Scott Grover
-  Date:   11/12/2018
+  Date:   11/23/2018
 
   Filename: flexlayout.css
   
-  Supporting files: pagelayout.css, form.css, table.css
+  Supporting files:  form.css, gridlayout.css, multimedia.css, pagelayout.css, table.css
 
 */
 /* 
@@ -18,7 +18,21 @@
 */
 /* HTML */
 
-/* Navigation /*
+/* Navigation */
+
+nav {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-box-flex: 1 1 100;
+	-moz-box-flex: 1 1 100px;
+	-ms-flexbox-flex: 1 1 100px;	
+	-webkit-flex: 1 1 100px;
+	flex: 1 1 100px;
+}
 
 /* Header */
 
@@ -32,6 +46,7 @@ header img {
 
 /* Body */
 
+
 body {     /* Copied from Tutorial */
 	display: -webkit-box;
 	display: -moz-box;
@@ -39,62 +54,10 @@ body {     /* Copied from Tutorial */
 	display: -webkit-flex;
 	display: flex;
 	
-	-webkit-flex-flow: row wrap;
-	-moz-flex-flow: row wrap;
 	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-}
-
-main {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	
+	-moz-flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
-	
-	-webkit-flex: 3 1 480px;
-	flex: 3 1 480px;
-}
-
-nav {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	
-	-webkit-flex: 1 1 100px;
-	flex: 1 1 100px;
-}
-
-section {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	
-	-webkit-flex: 3 1 380px;
-	flex: 3 1 380px;
-}
-
-section h1, article h1 {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	
-	width: 100%;
 }
 
 form {
@@ -104,12 +67,72 @@ form {
 	display: -webkit-flex;
 	display: flex;
 	
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	
+	-webkit-box-flex: 3 1 100;
+	-moz-box-flex: 3 1 100px;
+	-ms-flexbox-flex: 3 1 100px;	
 	-webkit-flex: 3 1 100px;
 	flex: 3 1 100px;
 }
+
+header h1{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	width: 100%;
+}
+
+main {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-ms-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	-webkit-box-flex: 3 1 480;
+	-moz-box-flex: 3 1 480px;
+	-ms-flexbox-flex: 3 1 480px;
+	-webkit-flex: 3 1 480px;
+	flex: 3 1 480px;
+}
+
+section {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	-webkit-box-flex: 3 1 380;
+	-moz-box-flex: 3 1 380px;
+	-ms-flexbox-flex: 3 1 380px;	
+	-webkit-flex: 3 1 380px;
+	flex: 3 1 380px;
+}
+
+/* Div Styles*/
 
 div.formRow { /* From Tutorial 7*/
 	display: -webkit-box;
@@ -118,6 +141,8 @@ div.formRow { /* From Tutorial 7*/
 	display: -webkit-flex;
 	display: flex;
 	
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	
@@ -125,6 +150,9 @@ div.formRow { /* From Tutorial 7*/
 }
 
 div.formRow > * { /* From Tutorial 7*/
+	-webkit-box-flex: 1 1 380;
+	-moz-box-flex: 1 1 380px;
+	-ms-flexbox-flex: 1 1 380px;
 	-webkit-flex: 1 1 380px;
 	flex: 1 1 380px;
 }
@@ -136,8 +164,14 @@ div > img {
 	display: -webkit-flex;
 	display: flex;
 	
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
+	
+	-webkit-box-flex: 3 1 380;
+	-moz-box-flex: 3 1 380px;
+	-ms-flexbox-flex: 3 1 380px;	
 	-webkit-flex: 3 1 380px;
 	flex: 3 1 380px;
 }
@@ -154,16 +188,30 @@ aside {
 
 @media only screen and (min-width: 200px) and (max-width: 480px) {   
 	
-	table {
-		-webkit-order: 98;
-		order:98;
+	article#prayer {
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	
+	   -moz-flex-flow: row wrap;
+	   -ms-flex-flow: row wrap;
+	   -webkit-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	
+		-webkit-box-flex: 3 1 380;
+	    -moz-box-flex: 3 1 380px;
+	    -ms-flexbox-flex: 3 1 380px;
+	    -webkit-flex: 3 1 380px;
+	    flex: 3 1 380px;
+    }
+	
+	figure img {
+		display: block;
+		transform: none;
 	}
 	
-	nav {
-		-webkit-order: 99;
-		order:99;
-		font-size: 1.5em;
-	}
 	footer {
 		-webkit-order: 100;
 		order: 100;
@@ -178,27 +226,25 @@ aside {
 		display: none;
 	}
 	
-    article#prayer {
-	    display: -webkit-box;
-	    display: -moz-box;
-	    display: -ms-flexbox;
-	    display: -webkit-flex;
-	    display: flex;
+	nav {
+		-webkit-order: 99;
+		order:99;
+		font-size: 1.5em;
+	}
 	
-	    -webkit-flex-flow: row wrap;
-	    flex-flow: row wrap;
+	table {
+		-webkit-order: 98;
+		order:98;
+	}
 	
-	    -webkit-flex: 3 1 380px;
-	    flex: 3 1 380px;
-    }	
-
-	
+}	
+		
 /*
 ================================
 Responsive Table From Tutorial 6
 ================================
 */
-/*	Tried to do this but it just overflowed into the links on the bottom of the page.
+/*
 	table, tbody, tr, td, th {
 		display: block;
 	}
@@ -216,7 +262,8 @@ Responsive Table From Tutorial 6
 	tbody td {
 		position: relative;
 		padding-left: 40%;
-		padding: 5px 0px;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	
 	td::before {
@@ -226,9 +273,9 @@ Responsive Table From Tutorial 6
 		left: 0px;
 		padding: 5px;
 		width: 40%;
-	} */
+	} 
 }
-
+*/
 /*
 ======================================
    Tablet Styles: 481px and greater 
