@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+   <!--
+      OC CIS 155 Web Development I
+      Build on Concepts Project #3
+      
+      Student Name: Scott Grover
+      Date:   11/12/2018
+
+      Filename: prayer_life.html
+      Supporting files: pagelayout.css, flexlayout.css, form.css, table.css, 
+	                    gltc_logo.png, prayerCards.png, prayerBooks.png, rosary.png
+
+   -->
+      <meta charset="utf-8" />
+	  <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+	  <meta name="description" content="Glorify the Lord Chapel prayer life page" />
+	  <meta name="keywords" content="Tacoma, chapel, Glorify the Lord, Sister Rose, Prayer, Prayer Request, Rosary" />
+	  <meta name="author" content="Scott Grover" />
+	  <title>Glorify the Lord Chapel: Prayer Life</title>
+    <!-- <link href="sb.css" rel="stylesheet" type="text/css" /> -->
+	  <link href="pagelayout.css" rel="stylesheet" type="text/css" media="screen"/>
+	  <link href="form.css" rel="stylesheet" type="text/css" media="screen" />
+	  <link href="table.css" rel="stylesheet" type="text/css" media="screen" />
+	  <link href="flexlayout.css" rel="stylesheet" type="text/css" media="screen" />
+	  
+   </head>
+<!--Nothing gets coded between closing head and opening body tags. All page content, including header, goes in the body.-->
+   <body>
+	 
+	  <header> <!-- This header will be at the top of each page. -->
+			 <!--Image is called:
+			 Sacred Heart of Jesus, 
+			 dated 1896, 
+			 source http://www.sistersofcarmel.com/ibarraran-sacred-heart_of_jesus-framed-prints.php, 
+			 Author: José María Ibarrarán y Ponce (1854-1910), 
+			 This work of art itself is in the public domain due to the copyright term is author's life plus 70 years.
+			 -->
+	     <a href="home.html"><img src="imgs/gtlc_logo.png" alt="Glorify the Lord Chapel Logo"/></a>
+	  </header>
+
+	  <nav class="horizontal"> <!-- Navigation links -->
+	     <!-- Navicon below was found at https://www.iconfinder.com/icons/1891031/green_hamburger_list_menu_navigation_stack_icon 
+	     with the license as free for commercial use and it was developed by Juliia Osadcha
+	     <a id="navicon" href="#"><img src="imgs/if_Menu_green_1891031.png" alt="navicon" /></a> -->
+	     <ul class="mainmenu" >
+		    <li><a href="home.html">Home</a></li>
+		    <li><a href="the_bible.html">The Bible</a>
+			   <ul class="submenu" >
+			      <!-- <li><a href="#">Bible Study</a></li> --><!-- Future -->
+			      <!-- <li><a href="#">Children's Bible Study</a></li> --><!-- Future -->
+			      <li><a href="http://usccb.org/bible/readings" target="_blank">Bible Readings for the Day</a></li>
+			   </ul>
+		    </li>
+		    <li><a href="prayer_life.html">Prayer Life</a>
+			   <ul class="submenu" >
+			      <li><a href="https://www.catholic.org/prayers/" target="_blank">Catholic Prayers</a></li>
+                  <li><a href="https://www.loyolapress.com/our-catholic-faith/prayer/personal-prayer-life" target="_blank">Personal Prayer Life</a></li>
+				  <li><a href="http://usccb.org/prayer-and-worship/prayers-and-devotions/index.cfm" target="_blank">Prayers and Devotions</a></li>
+			   </ul>
+		    </li>
+		    <!-- <li><a href="#">Spiritual Counseling</a>
+			   <ul class="submenu" >
+			      <li><a href="#">Weddings</a></li>
+			      <li><a href="#">Pre-Marriage Counseling</a></li>
+			      <li><a href="#">The Ceremony</a></li>
+			   </ul>
+		    </li> -->  <!-- Future -->
+		    <li><a href="about.html">About me</a></li>
+	     </ul>
+	   </nav>
+
+	  <main>  <!-- Main page content-->
+	     
+		 <section>
+		    <h1>Prayer Life</h1>
+		    <article id="prayer">
+			  
+			   <h2>Why Prayer is Important</h2>
+			   <p>
+				  Peace be with you! <!-- The first two paragraphs are my wife's words.  -->
+			   </p>
+			   <p>
+				  My prayers come from my heart, body and soul. There are many reasons to pray.  I pray because I want to be connected to God.  
+				  I use prayer to thank Him for all that He has given to me and my family.   I use prayer to show my love to God.  I use prayer 
+				  to express my faith in God.  I use prayer to ask for strength to endure the obstacles that He has placed in my path.  I use 
+				  prayer to express my hopes and dreams for Him to consider.  I also use prayer when I need comforting.  
+			   </p>
+			   <p> <!-- This paragraph came from www.catholic.org -->
+				  By <a href="https://www.catholic.org/encyclopedia/view.php?id=9571" target="_blank">prayer</a> we acknowledge God’s 
+				  power and goodness, our own neediness and dependence.  In hearing our prayer God does not change His will or action in our regard, 
+				  but simply puts into effect what He had eternally decreed in view of our prayer. 
+			   </p>
+			   <p> <!-- This paragraph came from www.catholic.org -->
+				  The use or habit of prayer <a href="https://www.merriam-webster.com/dictionary/redound" target="_blank" >redounds</a> 
+				  to our advantage in many ways.  Besides obtaining the gifts and graces we need, the very 
+				  process elevates our mind and heart to a knowledge and love of Divine things, greater confidence in God, and other precious 
+				  sentiments.  Indeed, so numerous and so helpful are these effects of prayer that they compensate us, even when the special 
+				  object of our prayer is not granted.
+			   </p>
+			   <blockquote class="bibleJesus">
+			      <p>
+				     Whatever you ask for in prayer with faith, you will receive.
+				  </p>
+				  <cite>&mdash;Mathew 21:22</cite>
+			   </blockquote>
+			   <blockquote class="bibleJesus">
+			      <p>
+				     Therefore I tell you, all that you ask for in prayer, believe that you will receive it and it shall be yours.
+				  </p>
+				  <cite>&mdash;Mark 11:24</cite>
+			   </blockquote>
+			
+			</article>
+	     
+		    <form class="prayerRequest" action="http://www.example.com/gtlc/prayerRequest" method="post">
+			   <fieldset id="prayForMe">
+			      <legend>Prayer Requests</legend>
+				  <p>Sorry, this is not an active form.</p>
+				  <p>* are required fields.</p>
+			      <div class="formRow">
+			         <label for="fName">First Name*</label>
+			         <input name="firstName" id="fName" type="text" required />
+			      </div>
+			      <div class="formRow">
+			         <label for="lName">Last Name</label>
+			         <input name="lastName" id="lName" type="text" />
+			      </div>
+			      <div class="formRow">
+			         <label for="mail">E-Mail</label>
+			         <input name="email" id="mail" type="email" />
+			      </div>
+			      <div class="formRow">
+			         <label for="pRequest">Prayer Request*</label>
+			         <textarea name="prayer" id="pRequest" required></textarea>
+			      </div>
+			      <div class="formRow">
+			         <label for="findBox">How did you find me?</label>
+			         <input name="find" id="findBox" list="findMe" />
+			            <datalist id="findMe">
+			               <option value="Internet search">
+				           <option value="Word of mouth">
+			            </datalist>
+				   </div>
+                   
+                   <p>      
+				      <input type="reset" value="Reset" />
+					 
+					  
+				      <input type="submit" value="Submit" id="buttonReset"/>
+				   </p>
+				  
+			   </fieldset>
+			</form>
+			
+		    <div id="prayerAids"> <!-- I took these pictures. -->
+			
+			   <img src="imgs/prayerCards.png" alt="Prayer Cards" title="Example of Prayer Cards" class="photosLeft small"/>
+
+			   <img src="imgs/prayerBooks.png" alt="Prayer Books" title="Example of Prayer Books" class="photosLeft small"/>
+						
+			   <img src="imgs/rosary.png" alt="The Rosary" title="The Rosary." class="photosCenter small"/>
+			   
+			</div>
+			
+		    <table class="rosary"> <!-- Caption has the source for the data in the table. -->
+			   <caption>From The St. Joseph Edition of The New American Bible Revised Edition</caption>
+			   <colgroup>
+				  <col id="firstCol" />
+				  <col id="secondCol" />
+				  <col class="mysteriesCol" span="5" />
+			   </colgroup>
+			   <thead>
+				  <tr>
+					 <th scope="col">The Rosary</th>
+					 <th scope="col">When these Mysteries are prayed.</th>					 
+					 <th scope="col">The First Mystery</th>
+					 <th scope="col">The Second Mystery</th>
+					 <th scope="col">The Third Mystery</th>
+					 <th scope="col">The Fourth Mystery</th>
+					 <th scope="col">The Fifth Mystery</th>
+				  </tr>
+			   </thead>
+			   <tbody>
+				  <tr>
+					 <th scope="row">The Joyful Mysteries</th>
+					 <td data-label="When these are prayed.">Mondays, Saturdays, and Sundays during the season of Advent</td>
+					 <td data-label="The First Mystery">The Annunciation<br /> &mdash;Luke 1:28<br />For the love of humility.</td>
+					 <td data-label="The Second Mystery">The Visitation<br /> &mdash;Luke 1:42<br />For charity toward my neighbor.</td>
+					 <td data-label="The Third Mystery">The Nativity<br /> &mdash;Luke 2:7<br />For the spirit of poverty.</td>
+					 <td data-label="The Fourth Mystery">The Presentation<br /> &mdash;Luke 2:28<br />For the virtue of obedience.</td>
+					 <td data-label="The Fifth Mystery">Finding in the Temple<br /> &mdash;Luke 2:46<br />For the virtue of piety.</td>
+				  </tr>
+				  <tr>
+					 <th scope="row">The Sorrowful Mysteries</th>
+					 <td data-label="When these are prayed.">Tuesdays, Fridays, and Sundays during the season of Lent</td>
+					 <td data-label="The First Mystery">Agony in the Garden<br /> &mdash;Mark 14:35<br />For true contrition.</td>
+					 <td data-label="The Second Mystery">Scourging at the Pillar<br /> &mdash;Mark  15:15<br />For the virtue of purity.</td>
+					 <td data-label="The Third Mystery">Crowning with Thorns<br /> &mdash;Mark 15:17<br />For moral courage.</td>
+					 <td data-label="The Fourth Mystery">Carrying the Cross<br /> &mdash;John 19:17<br />For the virtue of patience.</td>
+					 <td data-label="The Fifth Mystery">The Crucifixion<br /> &mdash;Luke 23:33<br />For final perseverance.</td>
+				  </tr>
+				  <tr>
+					 <th scope="row">The Glorious Mysteries</th>
+					 <td data-label="When these are prayed.">Wednesdays, and Sundays outside the seasons of Advent and Lent</td>
+					 <td data-label="The First Mystery">The Resurrection<br /> &mdash;Mark 16:6<br />For virtue of faith.</td>
+					 <td data-label="The Second Mystery">The Ascension<br /> &mdash;Mark 16:9<br />For the virtue of hope.</td>
+					 <td data-label="The Third Mystery">Descent of the Holy Spirit<br /> &mdash;Acts 2:4<br />For love of God.</td>
+					 <td data-label="The Fourth Mystery">Assumption of the Blessed Virgin Mary<br /> &mdash;Genesis 3:15<br />For devotion to Mary.</td>
+					 <td data-label="The Fifth Mystery">Crowning of the Blessed Virgin Mary<br /> &mdash;Revelations 12:1<br />For eternal happiness.</td>
+				  </tr>
+				  <tr>
+					 <th scope="row">The Luminous Mysteries</th>
+					 <td data-label="When these are prayed.">Thursdays</td>
+					 <td data-label="The First Mystery">The Baptism of Jesus<br /> &mdash;Matthew 3:13-17<br />For living my Baptismal promises.</td>
+					 <td data-label="The Second Mystery">The Wedding at Cana<br /> &mdash;John 2:1-11<br />For doing whatever Jesus says.</td>
+					 <td data-label="The Third Mystery">Proclamation of the Kingdom<br /> &mdash;Mark 1:15; Matthew 5:1-11<br />For seeking God's forgiveness.</td>
+					 <td data-label="The Fourth Mystery">The Transfiguration<br /> &mdash;Matthew 17:1-8<br />Becoming a new person in Christ.</td>
+					 <td data-label="The Fifth Mystery">Institution of the Eucharist<br /> &mdash;Matthew 26:26-30<br />For active participation at Mass.</td>
+				  </tr>
+			   </tbody>
+		    </table>
+			
+				
+		 </section>
+		 
+	  </main>
+
+      <footer>
+	     <p>
+		    <a href="mailto:scottgrover@student.olympic.edu">For technical problems with this site please contact us.</a>
+	     </p>
+      </footer>
+
+   </body>
+<!--Nothing gets coded between closing body and closing html tags. All page content, including footer, goes in the body.-->
+</html> 

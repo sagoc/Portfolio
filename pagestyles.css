@@ -1,0 +1,183 @@
+/*
+   
+  OC CIS 155 Web Development I
+  Build on Concepts Project #2
+  
+  Student Name: Scott Grover
+  Date:   10/23/2018
+
+  Filename: pagestyles.css
+  Supporting files: sb.css
+
+*/
+
+
+/* Body styles */
+
+     /* Made the backgound of page match the background of banner */
+html {
+	background-color: black;
+}
+
+html#bookshelf {     /* The bookshelf will be repeated for the background for The Bible page. */
+	background-image: url("imgs/My_Bibles.png");
+	background-repeat: repeat;
+}
+
+     /* Made the body section ivory to standout.*/
+body {
+	background-color: ivory;
+}
+
+/* Grid Row Styles*/  /* copied course text book to make grid rows and columns */
+div.row {
+	clear: both;
+}
+
+div.row::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/*  Grid Columns Styles */
+
+div[class^="col-"] {
+	float: left;
+}
+
+div.col-1-1 {width: 100%;}
+div.col-4-5 {width: 80%;}
+div.col-3-4 {width: 75%;}
+div.col-2-3 {width: 67.67%;}
+div.col-3-5 {width: 60%;}
+div.col-1-2 {width: 50%;}
+div.col-2-5 {width: 40%;}
+div.col-1-3 {width: 33.33%;}
+div.col-1-4 {width: 25%;}
+div.col-1-5 {width: 20%;}
+
+
+
+/* Site Navigation Styles */
+
+     
+nav {     /* The links covered multiple lines so increased the spacing between the lines.*/
+	line-height: 1.5em;
+}
+
+/* Header Styles */
+
+
+
+/* Main Section Styles */
+
+main#compare_bible {
+	display: block;
+	overflow: auto;
+	position: relative;
+	height: 700px;
+}
+
+main#compare_bible img {
+	border-radius: 30px;
+}
+
+main#compare_bible div[class^="col-1-2"] {
+	overflow: scroll;
+	height: 525px;
+}
+
+article p {
+    padding-right: 20px;
+ }
+ 
+article h1{     /*Made the h1 headers centerd in articles with spaces between the letters.*/
+	font-family: "Comic Sans MS", Verdana, sans-serif;
+	letter-spacing: 0.5em;  /*kerning*/
+	text-align: center;
+	background: linear-gradient(rgb( 0, 254, 0), rgb(0, 255, 0), rgb(102, 255, 153), rgb(153, 255, 204));
+}
+
+ article#beginnings > p::first-letter{     /* Making the first letter in each paragraph 20% bigger than the rest.*/
+	font-size: 1.2em;           
+}
+
+article.description h2{
+	font-size: 1em;
+	text-align: center;
+} 
+ 
+blockquote.bible {     /* Using blockquotes for biblical passages and I wanted them to stand out. */
+	background-color: white;
+	display: block;
+	margin: 20px;
+	padding: 20px;
+}
+
+blockquote.bible_jesus  {
+	background-color: white;
+	display: block;
+	margin: 20px;
+	padding: 20px;
+}
+
+blockquote.bible_jesus p {     /*  Jesus' words are normally in red. */
+     color: red;
+}
+  
+p.first {     /* Made a new class for the first paragraph of a new section to have a border above. */
+	border-top-color: hsla(0, 0%, 47%, 0.70);
+	border-top-style: solid;
+	border-top-width: 5px;
+}
+
+img.link:hover {
+	opacity: 0.5;
+}
+     
+.photos {     /* Made a new class called photos so that all photos would be displayed the same. */
+	float: right;
+	margin-left: 10px; 
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;/*The space to the left of the picture to prevent being crowded by wording.*/
+	padding: 10px; /*The space all around the picture*/
+}
+
+.small {
+    width: 25%;
+}
+
+.med {
+    width: 50%;
+}
+
+.large {
+	margin: auto;
+	position: relative;
+    width: 75%;
+}
+    
+figure {     /*Added the figure element so I could add a caption for photo. */
+	display: block;
+	margin: 15px;
+	position: relative;
+	width: 100%;
+}
+
+figcaption {
+    display: block;
+	font-family: Ariel, Helvetica, sans-serif;
+	font-style: oblique;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+
+     /* Added a new element called footer for contact info for technical problems */
+footer > p {
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}

@@ -1,0 +1,59 @@
+/*
+   
+  OC CIS 155 Web Development I
+  Build on Concepts Project #3
+  
+  Student Name: Scott Grover
+  Date:   11/11/2018
+
+  Filename: table.css
+  Supporting files: pagelayout.css, flexlayout.css
+
+*/
+
+
+/* 
+============
+Table styles 
+============
+*/
+
+table.rosary {
+	background-color: palegreen;
+	border: 10px outset rgb(153, 0, 153);
+	border-collapse: collapse;
+	font-size: 0.75em;
+	text-align: center;
+	width: 100%;
+}
+
+table.rosary th, table.rosary td {
+	border: 1px solid grey;
+}
+
+table.rosary thead {
+	background: white;
+}
+
+table.rosary thead tr {
+	height: 30px;
+}
+
+table.rosary tbody tr {
+	height: 40px;
+}
+
+table.rosary col#firstCol, div > table.rosary col#secondCol {
+	width: 11%;
+}
+
+col.mysteriesCol {
+	width: 14%;
+}
+
+/* Table Caption Styles */
+
+table.rosary caption {
+	caption-side: bottom;
+	text-align: right;
+}

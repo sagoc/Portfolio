@@ -1,0 +1,191 @@
+/*
+   
+  OC CIS 155 Web Development I
+  Build on Concepts Project #3
+  
+  Student Name: Scott Grover
+  Date:   10/28/2018
+
+  Filename: layout.css
+  
+  Supporting files: pagestyles.css, sb.css
+
+*/
+/* 
+=================
+   Base Styles
+=================
+*/
+/* HTML */
+
+/* Header */
+
+/* Navigation */
+
+a#navicon {     /* Copied from Tutorial */
+	display: none;
+}
+
+ul.submenu {     /* Copied from Tutorial */
+	display: none;
+}
+
+a.submenuTitle: hover+ul.submenu, ul.submenu:hover {     /* Copied from Tutorial */
+	display: block;
+}
+
+/* Body */
+
+body {     /* Copied from Tutorial */
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-direction: row;     /* For browsers that do not support flex-flow */
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	
+	-webkit-flex-wrap: wrap;        /* For browsers that do not support flex-flow */  
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	
+	-webkit-flex-flow: row wrap;    /* For browsers that support flex-flow*/  
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+header, footer {     /* Copied from Tutorial */
+	width; 100%;
+}
+
+aside {
+	
+}
+
+
+
+/* 
+================================
+   Mobile Styles: up to 480px 
+================================
+*/
+
+@media only screen and (max-width: 480px) {     /* Copied from Tutorial */
+	
+	a#navicon {     /* Copied from Tutorial */
+		display: block;
+	}
+	
+	nav.horizontal ul {     /* Copied from Tutorial */
+		display: none;
+	}
+	
+	a#navicon:hover+ul, nav.horizontal ul:hover {     /* Copied from Tutorial */
+		display: block;
+	}
+	
+	nav.horizontal a {     /* Copied from Tutorial */
+		font-size: 1.5em;
+		line-height: 2.2em;
+	}
+	
+	aside {     /* Copied from Tutorial */
+		display: none;
+	}
+	
+	footer {     /* Copied from Tutorial to ensure footer is always at the botom*/
+		-webkit-order: 100;
+		-moz-order: 100;
+		-ms-order: 100;
+		order: 100;
+	}
+}
+
+/*
+======================================
+   Tablet Styles: 481px and greater 
+======================================	
+*/
+
+@media only screen and (min-width: 481px) {
+	
+	nav.horizontal ul {     /* Copied from Tutorial */
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: flex;
+		
+		-webkit-flex-direction: row;     /* For browsers that do not support flex-flow */
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		
+		-webkit-flex-wrap: no wrap;     /* For browsers that do not support flex-flow */
+		-moz-flex-wrap: no wrap;
+		-ms-flex-wrap: no wrap;
+		flex-wrap: no wrap;
+		
+		-webkit-flex-flow: row no wrap; /* For browsers that support flex-flow */
+		-moz-flex-flow; row no wrap;
+		-ms-flex-flow; row no wrap;
+		flex-flow: ro no wrap;
+	}
+	
+	nav.horizontal li {     /* Copied from Tutorial */
+		webkit-flex: 1 1 auto;
+		-moz-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+	
+	ul.mainmenu > li {     /* Copied from Tutorial */
+		float: left;
+		position: relative;
+		width: 20%;
+	}
+	
+	ul.submenu {     /* Copied from Tutorial */
+		box-shadow: rgb(51, 51, 51) 5px 5px 15px;
+		position: absolute;
+		width: 200%;
+	}
+}
+
+/* 
+=======================================
+   Desktop Styles: 769px and greater
+=======================================
+*/
+
+@media only screen and (min-width: 769px) {
+	
+	ul.submenu {     /* Copied from Tutorial */
+		background: transparent;
+		box-shadow: none;
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+	
+	nav.horizontal::after {     /* Copied from Tutorial */
+		clear: both;
+		content: "";
+		display: table;
+	}
+	
+	article {     /* Copied from Tutorial */
+		float: left;
+		margin-right: 5%;
+		width: 55%;
+	}
+	
+	aside {     /* Copied from Tutorial */
+		float: left;
+		width: 40%;
+	}
+}

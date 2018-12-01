@@ -1,0 +1,282 @@
+/*
+   
+  OC CIS 155 Web Development I
+  Build on Concepts Project #3
+  
+  Student Name: Scott Grover
+  Date:   11/12/2018
+
+  Filename: pagelayout.css
+  Supporting files: flexlayout.css, form.css, table.css
+
+*/
+
+
+/* 
+============
+Body styles 
+============
+*/
+
+     /* Made the backgound of page match the background of banner but student comments said that was too much. */
+html {
+	/*background-color: black;*/
+	background-color: gray;
+	
+}
+
+html#bookshelf {     /* The bookshelf will be repeated for the background for The Bible page. */
+	background-image: url("imgs/My_Bibles.png");
+	background-repeat: repeat;
+}
+
+     /* Made the body section ivory to standout.*/
+body {
+	background-color: ivory;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+nav {
+	float: left;
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+main > article {
+	float: left;
+	margin-right: 10px;
+}
+
+main > aside {
+	float: left;
+	margin-right: 10px;
+}
+
+/*
+=================
+New Navigation Styles
+=================
+*/
+
+
+ul.mainmenu {
+	background-color: green;
+	list-style-type: none;
+	margin: 0px;
+	overflow: hidden;
+	padding: 0px;
+}
+
+ul.submenu{
+	list-style-type: none;
+	margin-left: 10px;
+	overflow: hidden;
+	padding: 0px;
+}
+
+ul.prayerMenu {
+	list-style-type: none;
+	margin-top: 30px;
+	margin-left: 10px;
+	overflow: hidden;
+	padding: 0px;
+}
+
+li a {
+	color: white;
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px 15px;
+	text-align: left;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: black;
+	background-color: ivory;
+}
+
+/*
+==============
+Header Styles 
+==============
+*/
+header img { /* new style */
+	width: 100%;
+}
+
+
+/* 
+====================
+Main Section Styles 
+====================
+*/
+
+
+main#compare_bible {
+	display: block;
+	overflow: scroll;
+	position: relative;
+	height: 640px;
+}
+
+main#compare_bible img {
+	border-radius: 30px;
+}
+
+article {
+	float: left;
+	width: 100%;
+}
+
+article p {
+    padding-right: 20px;
+	padding-left: 10px;
+ }
+ 
+section > h1, article > h1{     /*Made the h1 headers centerd in articles and Sections with spaces between the letters.*/
+	font-family: "Comic Sans MS", Verdana, sans-serif;
+	letter-spacing: 0.5em;  /*kerning*/
+	text-align: center;
+	background: linear-gradient(rgb(0, 254, 0), rgb(0, 255, 0), rgb(102, 255, 153), rgb(153, 255, 204));
+}
+
+article.description h2{
+	font-size: 1em;
+	text-align: center;
+} 
+
+ article#beginnings > p::first-letter{     /* Making the first letter in each paragraph 20% bigger than the rest.*/
+	font-size: 1.2em;           
+}
+
+article#prayer { /*  New Styles for the prayer_life.html */
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+	column-gap: 20px;
+	
+	column-width: 100px;
+	
+	-moz-column-rule: 2px solid green;
+	-webkit-column-rule: 2px solid green;
+	column-rule: 2px solid green;
+	
+	background-color: palegreen;
+	float: left;
+	height: 400px;
+	width: 67%;
+	overflow: scroll;
+}
+
+article#prayer h2 {
+	-moz-column-span: all;
+	-webkit-column-span: all;
+	column-span: all;
+}
+
+article#prayer p {
+	orphans: 2;
+	widows: 3;
+}
+
+article#prayer blockquote p {
+	orphans: 3;
+	widows: 3;
+}
+
+form.prayerRequest {
+	float: left;
+	height: 400px;
+	width: 33%;
+}
+
+div.buttonReset, div.buttonSubmit {
+	display: block;
+	float: left;
+	width: 5%;
+}
+
+div.buttons {
+	float: left;
+}
+
+div#prayerAids > img { /*  End of new Styles */
+	background-color: blue;
+	border-radius: 20px;
+	display: block;
+	float: left;
+	margin: 10px;
+	padding: 20px;
+}
+
+blockquote.bible {     /* Using blockquotes for biblical passages and I wanted them to stand out. */
+	background-color: white;
+	display: block;
+	margin: 20px;
+	padding: 20px;
+}
+
+blockquote.bibleJesus  {
+	background-color: white;
+	display: block;
+	margin: 20px;
+	padding: 20px;
+}
+
+blockquote.bibleJesus p {     /*  Jesus' words are normally in red. */
+     color: red;
+}
+  
+p.first {     /* Made a new class for the first paragraph of a new section to have a border above. */
+	border-top-color: hsla(0, 0%, 47%, 0.70);
+	border-top-style: solid;
+	border-top-width: 5px;
+}
+
+img.link:hover {
+	opacity: 0.5;
+}
+     
+.photosRight {     /* Modified class to have photos float right. */
+	float: right;
+	margin-left: 10px; 
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;/*The space to the left of the picture to prevent being crowded by wording.*/
+	padding: 10px; /*The space all around the picture*/
+}
+
+.photosLeft { /* New Style so photos float left. */
+	float: left;
+	margin: 10px;
+	padding: 10px;
+}
+
+.small {
+    width: 25%;
+}
+
+.med {
+    width: 50%;
+}
+
+.large {
+	margin: auto;
+	position: relative;
+    width: 75%;
+}
+
+     /* Added a new element called footer for contact info for technical problems */
+footer > p {
+	color: green;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}

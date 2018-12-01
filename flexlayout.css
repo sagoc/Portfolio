@@ -1,0 +1,251 @@
+/*
+   
+  OC CIS 155 Web Development I
+  Build on Concepts Project #3
+  
+  Student Name: Scott Grover
+  Date:   11/12/2018
+
+  Filename: flexlayout.css
+  
+  Supporting files: pagelayout.css, form.css, table.css
+
+*/
+/* 
+=================
+   Base Styles
+=================
+*/
+/* HTML */
+
+/* Navigation /*
+
+/* Header */
+
+header, footer {     /* Copied from Tutorial */
+	width: 100%;
+}
+
+header img {
+	width: 100%;
+}
+
+/* Body */
+
+body {     /* Copied from Tutorial */
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+main {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	-webkit-flex: 3 1 480px;
+	flex: 3 1 480px;
+}
+
+nav {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex: 1 1 100px;
+	flex: 1 1 100px;
+}
+
+section {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	-webkit-flex: 3 1 380px;
+	flex: 3 1 380px;
+}
+
+section h1, article h1 {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	width: 100%;
+}
+
+form {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	-webkit-flex: 3 1 100px;
+	flex: 3 1 100px;
+}
+
+div.formRow { /* From Tutorial 7*/
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	margin: 7px 0px;
+}
+
+div.formRow > * { /* From Tutorial 7*/
+	-webkit-flex: 1 1 380px;
+	flex: 1 1 380px;
+}
+
+div > img {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-flex: 3 1 380px;
+	flex: 3 1 380px;
+}
+
+aside {
+
+}
+
+/* 
+================================
+   Mobile Styles: up to 480px 
+================================
+*/
+
+@media only screen and (min-width: 200px) and (max-width: 480px) {   
+	
+	table {
+		-webkit-order: 98;
+		order:98;
+	}
+	
+	nav {
+		-webkit-order: 99;
+		order:99;
+		font-size: 1.5em;
+	}
+	footer {
+		-webkit-order: 100;
+		order: 100;
+	}
+	
+	main#compare_bible {
+		overflow: auto;
+		height: 100%;
+	}
+	
+	main#compare_bible figure {
+		display: none;
+	}
+	
+    article#prayer {
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	
+	    -webkit-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	
+	    -webkit-flex: 3 1 380px;
+	    flex: 3 1 380px;
+    }	
+
+	
+/*
+================================
+Responsive Table From Tutorial 6
+================================
+*/
+/*	Tried to do this but it just overflowed into the links on the bottom of the page.
+	table, tbody, tr, td, th {
+		display: block;
+	}
+	
+	thead, tfoot {
+		display: none;
+	}
+	
+	table caption {    I had to create this since the caption showed up at the top of the table in a very wide row.
+		display: block;
+		padding: 5px;
+	    text-align: right;
+	}
+	
+	tbody td {
+		position: relative;
+		padding-left: 40%;
+		padding: 5px 0px;
+	}
+	
+	td::before {
+		content: attr(data-label);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		padding: 5px;
+		width: 40%;
+	} */
+}
+
+/*
+======================================
+   Tablet Styles: 481px and greater 
+======================================	
+*/
+
+@media only screen and (min-width: 481px) {
+
+}
+
+/* 
+=======================================
+   Desktop Styles: 769px and greater
+=======================================
+*/
+
+@media only screen and (min-width: 769px) {
+	
+}
+	

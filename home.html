@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+   <!--
+      OC CIS 155 Web Development I
+      Build on Concepts Project #3
+      
+      Student Name: Scott Grover
+      Date:   11/12/2018
+
+      Filename: home.html
+      Supporting files: pagelayout.css, flexlayout.css, gltc_logo.png, DrOfDivinity.jpg
+
+   -->
+      <meta charset="utf-8" />
+	  <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+	  <meta name="description" content="Glorify the Lord Chapel home page" />
+	  <meta name="keywords" content="Tacoma, chapel, Glorify the Lord, Sister Rose" />
+	  <meta name="author" content="Scott Grover" />
+	  <title>Glorify the Lord Chapel: Home</title>
+    <!-- <link href="sb.css" rel="stylesheet" type="text/css" /> -->
+	  <link href="pagelayout.css" rel="stylesheet" type="text/css" media="screen"/>
+	  <link href="flexlayout.css" rel="stylesheet" type="text/css" media="screen" />
+	  
+   </head>
+<!--Nothing gets coded between closing head and opening body tags. All page content, including header, goes in the body.-->
+   <body>
+	 
+	  <header> <!-- This header will be at the top of each page. -->
+			 <!--Image is called:
+			 Sacred Heart of Jesus, 
+			 dated 1896, 
+			 source http://www.sistersofcarmel.com/ibarraran-sacred-heart_of_jesus-framed-prints.php, 
+			 Author: José María Ibarrarán y Ponce (1854-1910), 
+			 This work of art itself is in the public domain due to the copyright term is author's life plus 70 years.
+			 -->
+	     <a href="home.html"><img src="imgs/gtlc_logo.png" alt="Glorify the Lord Chapel Logo" /></a>
+	  </header>
+
+	  <nav class="horizontal"> <!-- Navigation links -->
+	     <!-- Navicon below was found at https://www.iconfinder.com/icons/1891031/green_hamburger_list_menu_navigation_stack_icon 
+	     with the license as free for commercial use and it was developed by Juliia Osadcha
+	     <a id="navicon" href="#"><img src="imgs/if_Menu_green_1891031.png" alt="navicon" /></a> -->
+	     <ul class="mainmenu" >
+		    <li><a href="home.html">Home</a></li>
+		    <li><a href="the_bible.html">The Bible</a>
+			   <ul class="submenu" >
+			      <!-- <li><a href="#">Bible Study</a></li> --><!-- Future -->
+			      <!-- <li><a href="#">Children's Bible Study</a></li> --><!-- Future -->
+			      <li><a href="http://usccb.org/bible/readings" target="_blank">Bible Readings for the Day</a></li>
+			   </ul>
+		    </li>
+		    <li><a href="prayer_life.html">Prayer Life</a>
+			   <ul class="submenu" >
+			      <li><a href="https://www.catholic.org/prayers/" target="_blank">Catholic Prayers</a></li>
+                  <li><a href="https://www.loyolapress.com/our-catholic-faith/prayer/personal-prayer-life" target="_blank">Personal Prayer Life</a></li>
+				  <li><a href="http://usccb.org/prayer-and-worship/prayers-and-devotions/index.cfm" target="_blank">Prayers and Devotions</a></li>			   
+			   </ul>
+		    </li>
+		    <!-- <li><a href="#">Spiritual Counseling</a>
+			   <ul class="submenu" >
+			      <li><a href="#">Weddings</a></li>
+			      <li><a href="#">Pre-Marriage Counseling</a></li>
+			      <li><a href="#">The Ceremony</a></li>
+			   </ul>
+		    </li> -->  <!-- Future -->
+		    <li><a href="about.html">About me</a></li>
+	     </ul>
+	   </nav>
+
+	  <main>  <!-- Main page content-->
+	  
+            <article id="beginnings" >   
+
+               <h1>Peace Be With You!</h1>
+		 
+		       <blockquote class="bible">   <!-- Blockquote with this id is used for Bible quotes. -->
+		          <p>
+		             But the fruit of the spirit is love, joy, peace, longsuffering, kindness, 
+			         goodness and faithfulness, gentleness, self-control. Against such there is no law. 
+			      </p>   
+			      <cite>&mdash;Galatians 5:22-23</cite>
+		        </blockquote>
+		 
+                <p class="first">   <!-- Made Glorify the Lord Chapel bold because it is the name of the site.-->
+                   <strong>Glorify the Lord Chapel</strong> is the expression of my love to God. A couple of 
+			       years ago, I started collecting items for a religous 
+			       <a href="https://en.wikipedia.org/wiki/Grotto">grotto</a> 
+			       for devotional purposes. As I continued to collect items, I felt the desire 
+			       to convert my house into a 
+			       <a href="https://en.wikipedia.org/wiki/Chapel">chapel</a>.
+                </p>
+                <p>
+                   I am heavily influenced by the Catholic Faith.  I attend mass every Sunday. 
+			       As you know, Catholics do not allow women to be priests.  I felt the 
+			       restraints of the Catholic Faith holding me back from what is in my heart.
+			       I wanted to be a priest.  
+		        </p>
+		 
+		        <a href="https://www.themonastery.org/">
+	            <img src="imgs/DrOfDivinity.jpg" alt="Doctor of Divinity Certificate" class="photosRight link small"/>
+		        </a> <!-- Link attached to Certificate will go to the Universl Life Church website if selected. -->
+		 
+		        <p>   <!-- Made Universal Life Church, and Covenant Bible Seminary bold because they are names of organizations.-->
+			        I received a Doctor of Divinity from the <strong>Universal Life Church</strong> on 
+			        March 30, 2017.  This allows me to officiate weddings in Washington State.  
+			        This was not enough for me, so I am now attending the 
+			        <strong><a href="http://covenantbibleseminary.org/">Covenant Bible Seminary</a></strong> 
+			        and working on my Associate of Theology Degree.
+                </p>
+                <p>   <!-- Made Glorify the Lord Chapel bold because it is the name of the site.-->
+                   <strong>Glorify the Lord Chapel</strong> is currently providing pre-marriage spiritual counseling and
+			       wedding ceremonies.
+                </p>
+		 
+            </article>
+	  </main>
+
+	       <footer>
+	          <p>
+		         <a href="mailto:scottgrover@student.olympic.edu">For technical problems with this site please contact us.</a>
+		      </p>
+	       </footer>
+  
+   </body>
+<!--Nothing gets coded between closing body and closing html tags. All page content, including footer, goes in the body.-->
+</html>

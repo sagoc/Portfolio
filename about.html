@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+   <!--
+      OC CIS 155 Web Development I
+      Build on Concepts Project #3
+      
+      Student Name: Scott Grover
+      Date:   11/12/2018
+
+      Filename: about.html
+      Supporting files: sb.css, pagestyles.css, gtlc_logo.png, Sister_Rose_Flowers_small.jpg
+
+   -->
+      <meta charset="utf-8" />
+	  <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+	  <meta name="description" content="Glorify the Lord Chapel - Sister Rose" />
+	  <meta name="keywords" content="Tacoma, chapel, Glorify the Lord, Sister Rose" />
+	  <meta name="author" content="Scott Grover" />
+	  <title>Glorify the Lord Chapel: Sister Rose</title>
+      <!-- <link href="sb.css" rel="stylesheet" type="text/css" /> -->
+	  <link href="pagelayout.css" rel="stylesheet" type="text/css" media="screen"/>
+	  <link href="flexlayout.css" rel="stylesheet" type="text/css" media="screen" />
+	  
+   </head>
+<!--Nothing gets coded between closing head and opening body tags. All page content, including header, goes in the body.-->
+   <body>
+	  
+	  <header> <!-- This header will be at the top of each page. -->
+			 <!--Image is called:
+			 Sacred Heart of Jesus, 
+			 dated 1896, 
+			 source http://www.sistersofcarmel.com/ibarraran-sacred-heart_of_jesus-framed-prints.php, 
+			 Author: José María Ibarrarán y Ponce (1854-1910), 
+			 This work of art itself is in the public domain due to the copyright term is author's life plus 70 years.
+			 -->
+	     <a href="home.html"><img src="imgs/gtlc_logo.png" alt="Glorify the Lord Chapel Logo" /></a>
+	  </header>
+	  
+	  <nav class="horizontal"> <!-- Navigation links -->
+	     <!-- Navicon below was found at https://www.iconfinder.com/icons/1891031/green_hamburger_list_menu_navigation_stack_icon 
+	     with the license as free for commercial use and it was developed by Juliia Osadcha
+	     <a id="navicon" href="#"><img src="imgs/if_Menu_green_1891031.png" alt="navicon" /></a> -->
+	     <ul class="mainmenu" >
+		    <li><a href="home.html">Home</a></li>
+		    <li><a href="the_bible.html">The Bible</a>
+			   <ul class="submenu" >
+			      <!-- <li><a href="#">Bible Study</a></li> --><!-- Future -->
+			      <!-- <li><a href="#">Children's Bible Study</a></li> --><!-- Future -->
+			      <li><a href="http://usccb.org/bible/readings" target="_blank">Bible Readings for the Day</a></li>
+			   </ul>
+		    </li>
+		    <li><a href="prayer_life.html">Prayer Life</a>
+			   <ul class="submenu" >
+			      <li><a href="https://www.catholic.org/prayers/" target="_blank">Catholic Prayers</a></li>
+                  <li><a href="https://www.loyolapress.com/our-catholic-faith/prayer/personal-prayer-life" target="_blank">Personal Prayer Life</a></li>
+				  <li><a href="http://usccb.org/prayer-and-worship/prayers-and-devotions/index.cfm" target="_blank">Prayers and Devotions</a></li>			   
+			   </ul>
+		    </li>
+		    <!--<li><a href="#">Spiritual Counseling</a>
+			   <ul class="submenu" >
+			      <li><a href="#">Weddings</a></li>
+			      <li><a href="#">Pre-Marriage Counseling</a></li>
+			      <li><a href="#">The Ceremony</a></li>
+			   </ul>
+		    </li> --> <!-- Future -->
+		    <li><a href="about.html">About me</a></li>
+	     </ul>
+	  </nav>
+	 
+	  <main>  <!-- Main page content-->
+		
+	     <article id="bio">   <!-- Biography page content-->
+		    <h1>Biography</h1>
+			
+			<img src="imgs/Sister_Rose_Flowers_small.jpg" alt="Sister Rose standing in front of white flowers" class="photosRight small" />
+			
+		    <p class="first">
+			 I was baptized into the Catholic Faith with my given name Marieta Catubay Bacal.  I was born in 
+			 <a href="https://www.bing.com/maps?osid=4a2396ac-a6a0-4876-8c6c-857693d37243&cp=11.56717~125.186792&lvl=9&imgid=66bd43e5-3685-4e2a-bf11-c67ac56856ce&v=2&sV=2&form=S00027">
+			 Sabang Suribao, Borongan, Eastern Samar, Philippines.</a>
+		    </p> 
+		    <p>
+			   I am the second child out of 7, and we were raised in a very spiritual home led by my mother and father.  
+			   Since we were poor, and my beloved mother was very religious, I was taken to the convent to live, serve the Lord and to be 
+			   educated when I was six years old. My life in the convent was full of grace, where I increased my knowledge of God.  I 
+			   learned moral character, humility, obedience, loving kindness and forgiveness. During those years, I grew in my faith for 
+			   the Lord, and I willingly became a Novice, the first step to become a Nun.  My passion was helping my fellowman and in the 
+			   early ages of my life, I worked hard to offer my service to the Lord.  My life in the convent was a very happy one.  Sister 
+			   Fran became my confidant and she was always there for me in the tough times when I missed my family and siblings.
+		    </p>
+			
+		    <p>
+			   While I was in the convent, my mother died from a heart attack and my father was killed for someone else’s political gain.  
+			   I became an orphan at 17 years old.  At this time, I was asked to take care of my siblings.  Since I was raised in the convent 
+			   and still a child myself, I did not have the knowledge to raise my siblings.  Deciding whether to stay or leave the convent to 
+			   raise my siblings, was a great struggle for me.  In the end, I did my best to raise my brothers and sisters.  During this time, 
+			   I had to take a lot of different jobs, just to put food on the table for my siblings.  It was a very hard life, but I believed 
+			   God had a plan for my life and this was just a hurdle to get over.
+		    </p>
+		    <blockquote class="bibleJesus">   <!-- Blockquote with this id is used for Bible quotes. --> 
+			   <p> <!--Using an inline style because normal convention is that when the Lord speaks, the words are in red.-->
+				..."With men this is impossible, but with God all things are possible."
+			   </p>
+			   <cite>&mdash;Matthew 19:26</cite>
+		    </blockquote>
+		    <p>
+			   I was very fortunate, with the grace of God, to come to America.  However, I lost all contact with my brothers and sisters.
+		    </p>
+		    <p>
+			   God granted me an opportunity to adopt my son and I named him, Noel Bacal, whom I am very proud of.  He is a very loving, caring, 
+			   respectful, and full of dreams.  Through the Grace of God, he is a very successful chef.  He is very healthy and very happy with 
+			   his wife and job.  I am very happy to know that his love for me and my husband is genuine.  I can’t thank God enough for his blessings 
+			   in my life.  Praise the Lord! Amen!
+		    </P>
+		    <p>
+			   God blessed me with a wonderful husband who is kind, handsome, caring and above all my best friend.  He showed me God has not forgotten me.  
+			   He is a great listener and concerned about my needs.  He helped me regain contact with my family and he made us whole again.  He also helped 
+			   me acquire education to become a licensed CNA (Certified Nurse Assistant) and a Massage Therapist and I was able to land a good job.  
+			   He has given me the freedom to be who I want to be. During the last few years, I adopted children to help them succeed in the Philippines.  
+			   Also along the way, I have opened my heart and home to the homeless.
+		    </p>
+		    <p>
+			   Now my life has taken another turn.  I had the strong desire to go back into the convent.  My husband generously gave me a house 
+			   to make into a chapel, so now I can return to the ministry of the Lord full time.
+		    </p>
+		    <p>
+			   The focus of my ministry will be:
+		    <p>
+			   <ul>
+				  <li>Spiritual counseling</li>
+				  <li>Bible study</li>
+				  <li>Pre-marriage spiritual counseling</li>
+				  <li>Officiate weddings</li>
+				  <li>Continue working with the homeless</li>
+			   </ul>
+		    <p>
+			   Glorify the Lord Chapel has become my calling.
+		    </p>
+		    <p>
+			   &mdash; Sister Rose
+		    </p>
+	   </article>
+		
+	 </main>
+	 
+		 <footer>
+			<p>
+			   <a href="mailto:scottgrover@student.olympic.edu">For technical problems with this site please contact us.</a>
+			</p>
+		 </footer>
+		 
+   </body>
+   
+</html>
